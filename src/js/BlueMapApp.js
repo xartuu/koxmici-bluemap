@@ -369,7 +369,21 @@ export class BlueMapApp {
             let loader = new FileLoader();
             loader.setResponseType("json");
             loader.load("settings.json?" + generateCacheHash(),
-                resolve,
+            async (settings) => {
+                    if(settings?.forwarding?.settings?.enabled !== true) {
+                        return resolve(settings);
+                    }
+
+                    if(typeof settings?.forwarding?.settings?.target !== "string") {
+                        return reject("Forwarding is enabled, but no target for settings.json forwarding configured!");
+                    }
+
+                    return loader.load(settings.forwarding.settings.target + "?" + generateCacheHash(),
+                        resolve,
+                        () => {},
+                        () => reject("Failed to load forwarded settings.json from '" + settings.forwarding.settings.target + "'!")
+                    );
+                },
                 () => {},
                 () => reject("Failed to load the settings.json!")
             );
