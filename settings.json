@@ -1,0 +1,20 @@
+{
+  "version": "4.1",
+  "useCookies": true,
+  "enableFreeFlight": true,
+  "defaultToFlatView": false,
+  "resolutionDefault": 1.0,
+  "minZoomDistance": 5,
+  "maxZoomDistance": 100000,
+  "hiresSliderMax": 500,
+  "hiresSliderDefault": 100,
+  "hiresSliderMin": 0,
+  "lowresSliderMax": 7000,
+  "lowresSliderDefault": 2000,
+  "lowresSliderMin": 500,
+  "maps": ["koxmici51_nether", "koxmici3", "koxmici4", "koxmici6", "koxmici7", "koxmici51_the_end", "koxmici7_nether", "koxmici51", "koxmici7_the_end", "koxmici50"],
+  "scripts": [],
+  "styles": [],
+  "mapDataRoot": "https://raw.githubusercontent.com/xartuu/koxmici-bluemap/renders",
+  "liveDataRoot": "https://raw.githubusercontent.com/xartuu/koxmici-bluemap/renders"
+}
