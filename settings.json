@@ -15,6 +15,6 @@
   "maps": ["koxmici51_nether", "koxmici3", "koxmici4", "koxmici6", "koxmici7", "koxmici51_the_end", "koxmici7_nether", "koxmici51", "koxmici7_the_end", "koxmici50"],
   "scripts": [],
   "styles": [],
-  "mapDataRoot": "https://raw.githubusercontent.com/xartuu/koxmici-bluemap/renders",
-  "liveDataRoot": "https://raw.githubusercontent.com/xartuu/koxmici-bluemap/renders"
+  "mapDataRoot": "https://raw.githubusercontent.com/koxmici/bluemaps/renders",
+  "liveDataRoot": "https://raw.githubusercontent.com/koxmici/bluemaps/renders"
 }
